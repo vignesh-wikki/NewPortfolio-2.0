@@ -2,6 +2,7 @@ import { NavLink } from "react-router-dom";
 import Popup from "../Utils/Popup";
 import { useState } from "react";
 import Toggle from "../Utils/Toggle";
+import Vimage from "/src/assets/v.png";
 
 export default function Navbar() {
   const [showContactPopup, setShowContactPopup] = useState<boolean>(false);
@@ -53,7 +54,7 @@ export default function Navbar() {
                 <NavLink to="/">
                   <img
                     className=" animate-[spin_3s_linear_infinite] h-7 w-auto"
-                    src="/src/assets/v.png"
+                    src={Vimage}
                     alt="logo"
                   />
                 </NavLink>

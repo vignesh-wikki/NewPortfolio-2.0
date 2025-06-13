@@ -44,7 +44,6 @@ export default function Projects() {
               className="object-contain  md:object-cover rounded-3xl shadow-lg"
               src={heroLogo}
               alt="Hero"
-              loading="lazy"
             />
           </div>
         </div>

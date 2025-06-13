@@ -1,6 +1,7 @@
 import { useRef } from "react";
 import { useIsVisible } from "../../Hooks/customHooks/useIsVisible";
 import { useSelector } from "react-redux";
+import Avatar from "../../assets/avatar.png";
 
 export default function Distination() {
   const ref1 = useRef<HTMLDivElement | null>(null);
@@ -53,10 +54,9 @@ export default function Distination() {
       >
         <img
           className=" w-36 h-36 rounded-[90px]"
-          src={
-            "https://www.getillustrations.com/photos/pack/3d-avatar-male_lg.png"
-          }
+          src={Avatar}
           alt="avatar"
+          loading="lazy"
         />
       </div>
     </>
