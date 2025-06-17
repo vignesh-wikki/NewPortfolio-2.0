@@ -1,6 +1,7 @@
 import { useRef } from "react";
 import { useIsVisible } from "../../Hooks/customHooks/useIsVisible";
 
+
 export default function HeroImage({ value }: { value: string }) {
   const ref1 = useRef<HTMLDivElement | null>(null);
   const isVisible1 = useIsVisible(ref1);
@@ -21,6 +22,7 @@ export default function HeroImage({ value }: { value: string }) {
             className="object-contain md:object-cover rounded-3xl shadow-lg"
             src={value}
             alt="Hero"
+            loading="lazy"
           />
         </div>
       </div>

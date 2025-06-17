@@ -13,8 +13,8 @@ export default function Home() {
     (state: { themeData: { backgroundColor: string } }) => state.themeData
   );
   return (
-    <>
-      <div className={`pt-[7rem] pb-16 flex justify-center ${backgroundColor}`}>
+    <div className="mb-12">
+      <div className={`pt-[7rem] flex justify-center ${backgroundColor}`}>
         <div className="grid grid-cols-2 gap-10">
           {/* Hero Image */}
           <HeroImage value={homoLogo} />
@@ -32,6 +32,6 @@ export default function Home() {
           <SocialMediaLinks />
         </div>
       </div>
-    </>
+    </div>
   );
 }

@@ -37,13 +37,14 @@ export default function Projects() {
       ? "opacity-100 translate-y-0 scale-100"
       : "opacity-0 translate-y-10 scale-95"
   }
-  lg:w-2xl md:w-xl w-[30rem] px-2 col-span-2`}
+  lg:w-4xl md:w-3xl w-[25rem]  px-2 col-span-2`}
         >
           <div>
             <img
               className="object-contain  md:object-cover rounded-3xl shadow-lg"
               src={heroLogo}
               alt="Hero"
+              loading="lazy"
             />
           </div>
         </div>
