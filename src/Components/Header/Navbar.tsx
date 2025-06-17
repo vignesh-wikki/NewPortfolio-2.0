@@ -3,6 +3,7 @@ import Popup from "../Utils/Popup";
 import { useState } from "react";
 import Toggle from "../Utils/Toggle";
 import Vimage from "/src/assets/v.png";
+import BurgerMenu from "../../assets/burgerMenu.svg";
 
 export default function Navbar() {
   const [showContactPopup, setShowContactPopup] = useState<boolean>(false);
@@ -82,7 +83,7 @@ export default function Navbar() {
                 <img
                   onClick={() => setShowSidePopup(true)}
                   className="h-9"
-                  src="/src/assets/burger-menu-left-svgrepo-com.svg"
+                  src={BurgerMenu}
                 ></img>
               </div>
             </div>
