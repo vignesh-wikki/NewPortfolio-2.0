@@ -53,7 +53,7 @@ export default function SocialMediaLinks() {
             </Link>
             <div className=" flex justify-center pt-3 pb-3 border-none ">
               <a
-                href="https://newportfolio-2-0backend.onrender.com/Vignesh_(resume).pdf"
+                href="https://newportfolio-2-0backend.onrender.com/files/Vignesh_(resume).pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 download
