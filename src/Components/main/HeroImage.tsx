@@ -15,9 +15,9 @@ export default function HeroImage({ value }: { value: string }) {
             ? "opacity-100 translate-y-0 scale-100"
             : "opacity-0 translate-y-10 scale-95"
         }
-        lg:w-4xl md:w-3xl w-[30rem] px-2 col-span-2`}
+        lg:w-3xl md:w-2xl w-[29rem]  px-2 col-span-2 max-w-fit ml-auto mr-auto`}
       >
-        <div>
+        <div className="">
           <img
             className="object-contain md:object-cover rounded-3xl shadow-lg"
             src={value}

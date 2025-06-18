@@ -27,8 +27,8 @@ export default function Projects() {
   }, [ProjectsDataApiUrl]);
 
   return (
-    <div className="mb-12">
-      <div className={`pt-[7rem]  flex justify-center ${backgroundColor}`}>
+    <div className={`pb-16 relative min-h-[100vh] ${backgroundColor} `}>
+      <div className={`pt-[7rem]  flex justify-center  `}>
         <div
           ref={ref1}
           className={`transition-all duration-[1200ms] ease-[cubic-bezier(0.4,0,0.2,1)] transform
@@ -37,7 +37,7 @@ export default function Projects() {
       ? "opacity-100 translate-y-0 scale-100"
       : "opacity-0 translate-y-10 scale-95"
   }
-  lg:w-4xl md:w-3xl w-[25rem]  px-2 col-span-2`}
+  lg:w-xl md:w-lg w-[25rem]  px-2 col-span-2`}
         >
           <div>
             <img
@@ -53,7 +53,7 @@ export default function Projects() {
         className={` grid grid-cols-1 md:grid-cols-2 md:gap-3 lg:grid-cols-3 lg:gap-5 gap-1 grid-flow-row ${backgroundColor}`}
       >
         {projectsData.length == 0 ? (
-          <div className="col-span-1 flex justify-center items-center ">
+          <div className="col-span-1  ">
             <Loader />
           </div>
         ) : (
@@ -64,6 +64,7 @@ export default function Projects() {
           ))
         )}
       </div>
+      <hr className="text-white"/>
     </div>
   );
 }

@@ -15,7 +15,7 @@ export default function Home() {
   return (
     <div className="mb-12">
       <div className={`pt-[7rem] flex justify-center ${backgroundColor}`}>
-        <div className="grid grid-cols-2 gap-10">
+        <div className="grid grid-cols-2 gap-10 ">
           {/* Hero Image */}
           <HeroImage value={homoLogo} />
           {/* Distination */}
