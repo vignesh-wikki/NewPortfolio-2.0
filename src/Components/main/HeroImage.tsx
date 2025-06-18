@@ -15,7 +15,7 @@ export default function HeroImage({ value }: { value: string }) {
             ? "opacity-100 translate-y-0 scale-100"
             : "opacity-0 translate-y-10 scale-95"
         }
-        lg:w-3xl md:w-2xl w-[29rem]  px-2 col-span-2 max-w-fit ml-auto mr-auto`}
+        lg:w-3xl md:w-2xl w-[20rem]  px-2 col-span-2 max-w-fit ml-auto mr-auto`}
       >
         <div className="">
           <img
