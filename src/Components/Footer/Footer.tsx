@@ -9,7 +9,7 @@ export default function Footer() {
   return (
     <>
       <footer className={`relative ${footerBackgroundColor}`}>
-        <hr />
+        <hr className="text-white" />
         <div
           className={` ${footerBackgroundColor} absolute bottom-0  w-full text-center flex-grow flex justify-center py-3`}
         >

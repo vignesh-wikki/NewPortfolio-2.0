@@ -3,8 +3,9 @@ import type ThemeType from "../Types/ThemeType";
 import { Link } from "react-router-dom";
 
 export default function SocialMediaLinks() {
-  const { headingTextColor, headingBorderColor } =
-    useSelector((state: { themeData: ThemeType }) => state.themeData);
+  const { headingTextColor, headingBorderColor } = useSelector(
+    (state: { themeData: ThemeType }) => state.themeData
+  );
   return (
     <>
       <div className="px-2 col-span-2">
@@ -51,9 +52,15 @@ export default function SocialMediaLinks() {
               </div>
             </Link>
             <div className=" flex justify-center pt-3 pb-3 border-none ">
-              <button className=" hover:bg-teal-800 text-lg text-white  w-52 h-10 rounded-lg bg-[#319795] ">
+              <a
+                href="https://newportfolio-2-0backend.onrender.com/Vignesh_(resume).pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                download
+                className=" hover:bg-teal-800 text-lg text-white  w-52 h-10 rounded-lg bg-[#319795] text-center pt-1"
+              >
                 Download Resume
-              </button>
+              </a>
             </div>
           </div>
         </div>

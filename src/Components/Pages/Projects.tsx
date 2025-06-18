@@ -64,7 +64,7 @@ export default function Projects() {
           ))
         )}
       </div>
-      <hr className="text-white"/>
+     
     </div>
   );
 }
